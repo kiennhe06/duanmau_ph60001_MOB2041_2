@@ -21,7 +21,6 @@ public class GioHangAdapter extends BaseAdapter {
     private final List<GioHangItem> gioHangItem;
     private OnSanPhamClickListener onSanPhamClickListener;
     NumberFormat currencyFormat;
-
     public GioHangAdapter(Context context, List<GioHangItem> gioHangItem) {
         this.context = context;
         this.gioHangItem = gioHangItem;

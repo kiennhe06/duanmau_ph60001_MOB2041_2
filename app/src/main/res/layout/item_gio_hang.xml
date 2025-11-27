@@ -4,68 +4,98 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="10dp"
-    android:background="@android:color/white">
+    android:padding="10dp">
 
+    <!-- Hình ảnh sản phẩm bên trái -->
+    <ImageView
+        android:id="@+id/img_san_pham"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_products" />
+
+    <!-- Thông tin sản phẩm ở giữa -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingStart="10dp">
 
+        <!-- Tên sản phẩm -->
         <TextView
             android:id="@+id/tvTenSanPham"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tên sản phẩm"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/black" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
+        <!-- Giá sản phẩm -->
         <TextView
             android:id="@+id/tvGiaSanPham"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giá"
-            android:textSize="14sp"
-            android:textColor="@android:color/holo_red_dark" />
+            android:text="Giá: 0 VND"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnGiam"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@android:drawable/ic_media_previous"
-            android:background="?attr/selectableItemBackgroundBorderless" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Nút xóa sản phẩm -->
+            <ImageView
+                android:id="@+id/imgXoaDanhMuc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:layout_alignParentRight="true"
+                app:tint="@android:color/holo_red_dark" />
+        </RelativeLayout>
 
-        <TextView
-            android:id="@+id/tvSoLuong"
-            android:layout_width="40dp"
+        <!-- Điều chỉnh số lượng bên phải -->
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            android:textSize="16sp"
-            android:gravity="center" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp">
 
-        <ImageButton
-            android:id="@+id/btnTang"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:src="@android:drawable/ic_media_next"
-            android:background="?attr/selectableItemBackgroundBorderless" />
+            <!-- Nút giảm số lượng -->
+            <ImageButton
+                android:id="@+id/btnGiam"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/minus"
+                android:scaleType="fitCenter"/>
 
-        <ImageView
-            android:id="@+id/imgXoaDanhMuc"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@android:drawable/ic_menu_delete"
-            android:layout_marginStart="10dp"
-            app:tint="@android:color/holo_red_dark" />
+            <!-- Ô hiển thị số lượng -->
+            <TextView
+                android:id="@+id/tvSoLuong"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="20sp"
+                android:background="#383232"
+                android:textColor="@android:color/white" />
+
+            <!-- Nút tăng số lượng -->
+            <ImageButton
+                android:id="@+id/btnTang"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
-

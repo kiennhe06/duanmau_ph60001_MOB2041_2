@@ -94,6 +94,7 @@ public class ThongKeSanPhamActivity extends AppCompatActivity {
                     editText.setText(selectedDate);
                 },
                 year, month, day
+
         );
         datePickerDialog.show();
     }

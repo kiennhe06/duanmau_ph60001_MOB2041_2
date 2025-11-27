@@ -51,7 +51,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
-                android:src="@android:drawable/ic_menu_add"
+android:src="@drawable/ic_gio_hang"
                 android:contentDescription="Giỏ hàng" />
 
             <TextView
