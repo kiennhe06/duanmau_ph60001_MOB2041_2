@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkPopupMenu" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">#333333</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
+

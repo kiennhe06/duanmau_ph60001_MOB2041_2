@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_doanh_thu"
+        android:title="Doanh thu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_top_san_pham"
+        android:title="Top sản phẩm"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_top_khach_hang"
+        android:title="Top khách hàng"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_doi_mat_khau"
+        android:title="Đổi mật khẩu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_dang_xuat"
+        android:title="Đăng xuất"
+        app:showAsAction="never" />
+</menu>
+

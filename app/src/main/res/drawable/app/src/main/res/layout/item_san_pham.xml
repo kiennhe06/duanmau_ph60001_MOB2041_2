@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <!-- Hình ảnh sản phẩm -->
+    <ImageView
+        android:id="@+id/imgSanPham"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_products"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp" />
+
+    <!-- Thông tin sản phẩm -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên sản phẩm -->
+        <TextView
+            android:id="@+id/tvTenSanPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Giá sản phẩm -->
+        <TextView
+            android:id="@+id/tvGiaSanPham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá: 0 VNĐ"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginTop="4dp" />
+
+        <!-- Số lượng tồn kho -->
+        <TextView
+            android:id="@+id/tvSoLuongTonKho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tồn kho: 0"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Khu vực chứa các nút Edit và Delete -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- icon giỏ hàng -->
+        <ImageView
+            android:id="@+id/imgGioHang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_gio_hang"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Nút sửa sản phẩm -->
+        <ImageView
+            android:id="@+id/imgSuaDanhMuc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_marginEnd="10dp" />
+
+        <!-- Nút xóa sản phẩm -->
+        <ImageView
+            android:id="@+id/imgXoaDanhMuc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="@android:color/holo_red_dark" />
+    </LinearLayout>
+</LinearLayout>

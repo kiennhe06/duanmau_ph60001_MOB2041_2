@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DuAnMau"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.EditKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditDanhMucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditNhanVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuanLyNhanVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HDCTActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuanLyDanhMucActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuanLyHoaDonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DoiMatKhauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EditSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GioHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuanLyKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ThongKeSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ThongKeKhachHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ThongKeDoanhThuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.QuanLySanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ChaoActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
