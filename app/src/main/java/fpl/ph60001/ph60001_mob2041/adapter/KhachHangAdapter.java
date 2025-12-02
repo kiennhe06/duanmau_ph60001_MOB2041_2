@@ -14,6 +14,8 @@ import fpl.ph60001.ph60001_mob2041.model.KhachHang;
 import java.util.List;
 
 public class KhachHangAdapter extends BaseAdapter {
+
+
     private final Context context;
     private final List<KhachHang> danhSachKhachHang;
     private OnKhachHangClickListener onKhachHangClickListener;

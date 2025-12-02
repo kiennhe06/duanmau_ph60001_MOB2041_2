@@ -23,6 +23,8 @@ public class HoaDonAdapter extends BaseAdapter {
         void onOpenHDCT(HoaDonDto hoaDon);
     }
 
+
+
     public HoaDonAdapter(Context context, List<HoaDonDto> sanPhamList) {
         this.context = context;
         this.danhSachHoaDon = sanPhamList;

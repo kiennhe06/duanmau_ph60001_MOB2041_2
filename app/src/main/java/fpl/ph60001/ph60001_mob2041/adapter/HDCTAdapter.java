@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class HDCTAdapter extends BaseAdapter {
+
     private final Context context;
     private final List<HoaDonChiTietDto> gioHangItem;
     NumberFormat currencyFormat;
@@ -40,6 +41,9 @@ public class HDCTAdapter extends BaseAdapter {
 
         return convertView;
     }
+
+
+
 
     public HDCTAdapter(Context context, List<HoaDonChiTietDto> gioHangItem) {
         this.context = context;
