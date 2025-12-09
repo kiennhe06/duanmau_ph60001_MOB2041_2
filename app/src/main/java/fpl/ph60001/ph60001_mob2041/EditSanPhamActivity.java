@@ -24,6 +24,7 @@ public class EditSanPhamActivity extends AppCompatActivity {
     private List<DanhMuc> danhMucList;
     private Button btnLuu, btnHuy;
 
+
     private DatabaseHelper db;
     private String maSanPham;
     int type;

@@ -22,6 +22,7 @@ public class QuanLyDanhMucActivity extends AppCompatActivity implements DanhMucA
     private List<DanhMuc> danhSachDanhMuc;
     private DatabaseHelper db;
 
+
     @Override
     public boolean onSupportNavigateUp() {
         finish();

@@ -63,6 +63,7 @@ public class QuanLyNhanVienActivity extends AppCompatActivity implements NhanVie
         nhanVienAdapter.notifyDataSetChanged();
     }
 
+
     @Override
     public void onEditNhanVien(NhanVien nhanVien) {
         Intent intent = new Intent(this, EditNhanVienActivity.class);

@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="DarkPopupMenu" parent="ThemeOverlay.AppCompat.Dark">
-        <item name="android:colorBackground">#333333</item>
-        <item name="android:textColor">@android:color/white</item>
+    <style name="DarkPopupMenu" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/colorSurface</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <!-- ensure popup uses readable divider and ripple -->
+        <item name="android:listDivider">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Button style using primary color -->
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Toolbar title style -->
+    <style name="AppToolbar" parent="">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>
 

@@ -12,9 +12,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="Quản lý sản phẩm"
+        app:titleTextColor="@color/colorOnPrimary"
         app:navigationIcon="?attr/homeAsUpIndicator" />
 
     <EditText

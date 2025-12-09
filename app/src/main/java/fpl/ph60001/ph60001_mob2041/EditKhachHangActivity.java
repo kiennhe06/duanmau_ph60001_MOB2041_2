@@ -16,6 +16,7 @@ public class EditKhachHangActivity extends AppCompatActivity {
     private DatabaseHelper db;
     private int type;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

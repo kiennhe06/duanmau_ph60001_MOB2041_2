@@ -17,9 +17,10 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="Đăng nhập"
+        app:title="JPMart"
+        app:titleTextColor="@color/colorOnPrimary"
         app:navigationIcon="?attr/homeAsUpIndicator" />
 
     <RelativeLayout
@@ -31,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome to JPMart"
-            android:textColor="#2e3d3d"
+            android:textColor="@color/colorTextPrimary"
             android:textSize="22sp"
             android:textStyle="bold"
             android:paddingLeft="45dp"
@@ -61,7 +62,7 @@
             android:layout_height="wrap_content"
             android:text="Thống kê"
             android:textAlignment="center"
-            android:textColor="#2196F3"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginTop="8dp"/>
@@ -90,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="Doanh thu"
                     android:textAlignment="center"
-                    android:textColor="#2e3d3d"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -112,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:text="Top sản phẩm"
                     android:textAlignment="center"
-                    android:textColor="#2e3d3d"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -134,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:text="Top khách hàng"
                     android:textAlignment="center"
-                    android:textColor="#2e3d3d"
+                    android:textColor="@color/colorTextPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -146,7 +147,7 @@
         android:layout_height="wrap_content"
         android:text="Quản lý"
         android:textAlignment="center"
-        android:textColor="#2196F3"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="8dp"/>

@@ -28,6 +28,7 @@ public class ThongKeKhachHangActivity extends AppCompatActivity {
     private Button btnThongKeTopKhachHang;
     private TextView tvTopKhachHang;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

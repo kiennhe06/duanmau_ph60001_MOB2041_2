@@ -21,6 +21,7 @@ public class QuanLyHoaDonActivity extends AppCompatActivity implements HoaDonAda
     private List<HoaDonDto> danhSachHoaDon;
     private DatabaseHelper db;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

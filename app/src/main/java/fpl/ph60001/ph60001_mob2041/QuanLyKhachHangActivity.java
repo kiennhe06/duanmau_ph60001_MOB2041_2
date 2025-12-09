@@ -22,6 +22,7 @@ public class QuanLyKhachHangActivity extends AppCompatActivity implements KhachH
     private List<KhachHang> danhSachKhachHang;
     private DatabaseHelper db;
 
+
     @Override
     public boolean onSupportNavigateUp() {
         finish();

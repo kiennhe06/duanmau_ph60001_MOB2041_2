@@ -103,28 +103,28 @@ public class LoginActivity extends AppCompatActivity {
     public void taoDuLieuSanPham() {
         DatabaseHelper db = new DatabaseHelper(this);
 
-        SanPham sp1 = new SanPham("SP001", "Nước ngọt Calpis", 12000, 50, "Lon", "2024-02-08", "DM001");
+        SanPham sp1 = new SanPham("SP001", "Nước ngọt Calpis", 12000, 50, "Lon", "2025-02-08", "DM001");
         db.themSanPham(sp1);
 
-        SanPham sp2 = new SanPham("SP002", "Trà xanh Ito En", 10000, 40, "Lon", "2024-02-08", "DM001");
+        SanPham sp2 = new SanPham("SP002", "Trà xanh Ito En", 10000, 40, "Lon", "2025-02-08", "DM001");
         db.themSanPham(sp2);
 
-        SanPham sp3 = new SanPham("SP003", "Bánh Pocky", 25000, 30, "Hộp", "2024-02-07", "DM002");
+        SanPham sp3 = new SanPham("SP003", "Bánh Pocky", 25000, 30, "Hộp", "2025-02-07", "DM002");
         db.themSanPham(sp3);
 
-        SanPham sp4 = new SanPham("SP004", "Sữa Meiji", 15000, 20, "Hộp", "2024-02-06", "DM003");
+        SanPham sp4 = new SanPham("SP004", "Sữa Meiji", 15000, 20, "Hộp", "2025-02-06", "DM003");
         db.themSanPham(sp4);
 
-        SanPham sp5 = new SanPham("SP005", "Mì Udon", 5000, 100, "Gói", "2024-02-05", "DM004");
+        SanPham sp5 = new SanPham("SP005", "Mì Udon", 5000, 100, "Gói", "2025-02-05", "DM004");
         db.themSanPham(sp5);
 
-        SanPham sp6 = new SanPham("SP006", "Nước khoáng Suntory", 8000, 60, "Chai", "2024-02-04", "DM001");
+        SanPham sp6 = new SanPham("SP006", "Nước khoáng Suntory", 8000, 60, "Chai", "2025-02-04", "DM001");
         db.themSanPham(sp6);
 
         SanPham sp7 = new SanPham("SP007", "Snack Jagabee", 12000, 45, "Gói", "2024-02-08", "DM005");
         db.themSanPham(sp7);
 
-        SanPham sp8 = new SanPham("SP008", "Trà gạo lứt Genmaicha", 30000, 25, "Hộp", "2024-02-08", "DM006");
+        SanPham sp8 = new SanPham("SP008", "Trà gạo lứt Genmaicha", 30000, 25, "Hộp", "2025-02-08", "DM006");
         db.themSanPham(sp8);
 
         SanPham sp9 = new SanPham("SP009", "Dầu ăn Ajinomoto", 45000, 15, "Chai", "2024-02-03", "DM007");
@@ -242,21 +242,21 @@ public class LoginActivity extends AppCompatActivity {
     public void taoDuLieuHoaDon() {
         DatabaseHelper db = new DatabaseHelper(this);
 
-        db.themHoaDon(new HoaDon("HD101", "NV001", "KH021", "2025-01-05", 180000));
-        db.themHoaDon(new HoaDon("HD102", "NV002", "KH022", "2025-01-18", 220000));
-        db.themHoaDon(new HoaDon("HD103", "NV003", "KH023", "2025-01-27", 265000));
+        db.themHoaDon(new HoaDon("HD101", "NV001", "KH021", "2025-08-05", 180000));
+        db.themHoaDon(new HoaDon("HD102", "NV002", "KH022", "2025-08-18", 220000));
+        db.themHoaDon(new HoaDon("HD103", "NV003", "KH023", "2025-08-27", 265000));
 
-        db.themHoaDon(new HoaDon("HD104", "NV004", "KH024", "2025-02-03", 300000));
-        db.themHoaDon(new HoaDon("HD105", "NV005", "KH025", "2025-02-11", 250000));
-        db.themHoaDon(new HoaDon("HD106", "NV006", "KH026", "2025-02-22", 275000));
+        db.themHoaDon(new HoaDon("HD104", "NV004", "KH024", "2025-09-03", 300000));
+        db.themHoaDon(new HoaDon("HD105", "NV005", "KH025", "2025-09-11", 250000));
+        db.themHoaDon(new HoaDon("HD106", "NV006", "KH026", "2025-09-22", 275000));
 
-        db.themHoaDon(new HoaDon("HD107", "NV007", "KH027", "2025-03-04", 190000));
-        db.themHoaDon(new HoaDon("HD108", "NV008", "KH028", "2025-03-12", 320000));
-        db.themHoaDon(new HoaDon("HD109", "NV009", "KH029", "2025-03-28", 295000));
+        db.themHoaDon(new HoaDon("HD107", "NV007", "KH027", "2025-10-04", 190000));
+        db.themHoaDon(new HoaDon("HD108", "NV008", "KH028", "2025-10-12", 320000));
+        db.themHoaDon(new HoaDon("HD109", "NV009", "KH029", "2025-10-28", 295000));
 
-        db.themHoaDon(new HoaDon("HD110", "NV010", "KH030", "2025-04-02", 310000));
-        db.themHoaDon(new HoaDon("HD111", "NV011", "KH031", "2025-04-16", 345000));
-        db.themHoaDon(new HoaDon("HD112", "NV012", "KH032", "2025-04-27", 280000));
+        db.themHoaDon(new HoaDon("HD110", "NV010", "KH030", "2025-11-02", 310000));
+        db.themHoaDon(new HoaDon("HD111", "NV011", "KH031", "2025-11-16", 345000));
+        db.themHoaDon(new HoaDon("HD112", "NV012", "KH032", "2025-11-27", 280000));
 
         db.themHoaDon(new HoaDon("HD113", "NV001", "KH033", "2025-05-05", 360000));
         db.themHoaDon(new HoaDon("HD114", "NV002", "KH034", "2025-05-18", 390000));

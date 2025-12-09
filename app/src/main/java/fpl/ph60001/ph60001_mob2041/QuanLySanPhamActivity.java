@@ -40,6 +40,7 @@ public class QuanLySanPhamActivity extends AppCompatActivity implements SanPhamA
     RelativeLayout itemCart;
     GioHang gioHang;
 
+
     @Override
     public boolean onSupportNavigateUp() {
         finish();
