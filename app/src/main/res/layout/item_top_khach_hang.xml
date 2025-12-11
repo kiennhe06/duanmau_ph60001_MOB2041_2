@@ -10,7 +10,7 @@
         android:id="@+id/imgCustomer"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@drawable/ic_top_customers"
         android:scaleType="centerCrop"
         android:layout_marginRight="10dp"
         android:background="@android:color/darker_gray"

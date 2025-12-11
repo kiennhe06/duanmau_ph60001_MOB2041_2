@@ -42,7 +42,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String COLUMN_NGAY_LAP = "ngayLap";
     private static final String COLUMN_TONG_TIEN = "tongTien";
 
-    // Bang sp
+    // BẢNG SẢN PHẨM
     private static final String BANG_SANPHAM = "SanPham";
     private static final String COT_MA_SP = "maSanPham";
     private static final String COT_TEN_SAN_PHAM = "tenSanPham";

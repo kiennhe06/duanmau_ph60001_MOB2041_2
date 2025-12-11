@@ -218,7 +218,7 @@ public class LoginActivity extends AppCompatActivity {
         DatabaseHelper db = new DatabaseHelper(this);
 
         db.themNhanVien(new NhanVien("NV001", "Nguyễn Văn An", "12 Lý Tự Trọng, Q1, TP.HCM", 1, 25000000, "admin123"));
-        db.themNhanVien(new NhanVien("NV002", "Trần Thị Cúc", "34 Lê Lợi, Q3, TP.HCM", 0, 12000000, "123"));
+        db.themNhanVien(new NhanVien("NV002", "Trần Thị Cúc", "34 Lê Lợi, Q3, TP.HCM", 0, 12000000, "sales"));
         db.themNhanVien(new NhanVien("NV003", "Lê Minh Hùng", "56 Trần Hưng Đạo, Hà Nội", 0, 20000000, "accounting789"));
         db.themNhanVien(new NhanVien("NV004", "Phạm Đức Thịnh", "78 Nguyễn Du, Đà Nẵng", 0, 9000000, "warehouse101"));
         db.themNhanVien(new NhanVien("NV005", "Võ Hoàng Yến", "90 Pasteur, Hải Phòng", 0, 11000000, "marketing202"));

@@ -30,6 +30,7 @@ public class ThongKeDoanhThuActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Thống kê doanh thu");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         databaseHelper = new DatabaseHelper(this);
 
         edtNgayBatDau = findViewById(R.id.edtNgayBatDau);
@@ -38,25 +39,31 @@ public class ThongKeDoanhThuActivity extends AppCompatActivity {
 
         edtNgayBatDau.setOnClickListener(v -> showDatePickerDialog(edtNgayBatDau));
         edtNgayKetThuc.setOnClickListener(v -> showDatePickerDialog(edtNgayKetThuc));
+
         findViewById(R.id.btnThongKeDoanhThu).setOnClickListener(v -> {
             String ngayBatDau = edtNgayBatDau.getText().toString().trim();
             String ngayKetThuc = edtNgayKetThuc.getText().toString().trim();
+
             if (ngayBatDau.isEmpty() || ngayKetThuc.isEmpty()) {
                 tvDoanhThu.setText("Vui lòng nhập đầy đủ ngày bắt đầu và ngày kết thúc.");
                 return;
             }
+
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault());
+            sdf.setLenient(false); // bắt lỗi định dạng
 
+            Date startDate, endDate;
             try {
-                Date startDate = sdf.parse(ngayBatDau);
-                Date endDate = sdf.parse(ngayKetThuc);
-
-                if (startDate.after(endDate) || startDate.equals(endDate)) {
-                    Toast.makeText(this, "Ngày bắt đầu phải trước ngày kết thúc", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+                startDate = sdf.parse(ngayBatDau);
+                endDate = sdf.parse(ngayKetThuc);
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                Toast.makeText(this, "Sai định dạng ngày! Vui lòng chọn ngày từ lịch.", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if (startDate.after(endDate) || startDate.equals(endDate)) {
+                Toast.makeText(this, "Ngày bắt đầu phải trước ngày kết thúc", Toast.LENGTH_SHORT).show();
+                return;
             }
 
             int doanhThu = databaseHelper.layDoanhThu(ngayBatDau, ngayKetThuc);
@@ -79,7 +86,8 @@ public class ThongKeDoanhThuActivity extends AppCompatActivity {
         DatePickerDialog datePickerDialog = new DatePickerDialog(
                 this,
                 (view, selectedYear, selectedMonth, selectedDay) -> {
-                    String selectedDate = String.format("%04d/%02d/%02d", selectedYear, selectedMonth + 1, selectedDay);
+                    String selectedDate = String.format("%04d/%02d/%02d",
+                            selectedYear, selectedMonth + 1, selectedDay);
                     editText.setText(selectedDate);
                 },
                 year, month, day
@@ -87,4 +95,3 @@ public class ThongKeDoanhThuActivity extends AppCompatActivity {
         datePickerDialog.show();
     }
 }
-
